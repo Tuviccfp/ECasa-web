@@ -1,7 +1,9 @@
 import { styled } from "styled-components"
 
 const Nav = styled.nav`
+    position: fixed;
     border-bottom: 1px solid black;
+    width: 100vw;
     z-index: 2;
     display: flex;
     flex-direction: row;
