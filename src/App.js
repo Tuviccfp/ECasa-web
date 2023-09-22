@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import NavApp from "./components/Home/NavApp";
+import NavMenu from "./components/Home/NavMenu";
 
 function App() {
   const subSection = {
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <NavApp {...subSection}/>
+      <NavMenu {...subSection}/>
       <Home />
     </>
   );

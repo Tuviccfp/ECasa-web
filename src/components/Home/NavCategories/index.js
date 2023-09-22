@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -19,7 +20,9 @@ export default function NavCategories({categories}) {
       <List>
         {/* Percorro toda a minha propriedade e passo os dados necessários a serem capturados */}
         {categories.map((category) => (
-          <li key={category.id}>{category.name}</li>
+          <Link to={`/categories/${category._id}`} key={category._id}>
+            <li style={{ cursor: "pointer" }}>{category.name}</li>
+          </Link>
         ))}
       </List>
     </Nav>

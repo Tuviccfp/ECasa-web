@@ -8,6 +8,7 @@ const Nav = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: white;
 `
 const ListNav = styled.ul`
     display: flex;
@@ -20,7 +21,7 @@ const ItemList = styled.li`
     margin-right: 0px;
 `
 
-export default function NavApp({...subSection}) {
+export default function NavMenu({...subSection}) {
     return (
         <Nav>
             <p style={{border: '1px solid black', width: '58px', margin: '0'}}>Imagem Icone</p>
