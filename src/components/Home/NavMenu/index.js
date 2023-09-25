@@ -4,7 +4,7 @@ const Nav = styled.nav`
     position: fixed;
     border-bottom: 1px solid black;
     width: 100vw;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,9 +21,9 @@ const ItemList = styled.li`
     margin-right: 0px;
 `
 
-export default function NavMenu({...subSection}) {
+export default function NavMenu({subSection, styled}) {
     return (
-        <Nav>
+        <Nav style={styled}>
             <p style={{border: '1px solid black', width: '58px', margin: '0'}}>Imagem Icone</p>
             <ListNav>
                 <ItemList>{subSection.sub1}</ItemList>

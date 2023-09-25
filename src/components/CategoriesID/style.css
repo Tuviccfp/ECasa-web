@@ -1,0 +1,22 @@
+.nav-store {
+    position: relative;
+    top: 50px;
+}
+h4 { margin-top: 0; }
+.nav-subcategory {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.model-subcategory {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+.model-new-product {
+}

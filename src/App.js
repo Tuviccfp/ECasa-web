@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <NavMenu {...subSection}/>
+      <NavMenu subSection={subSection}/>
       <Home />
     </>
   );
