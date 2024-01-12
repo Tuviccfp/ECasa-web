@@ -9,6 +9,7 @@ function App() {
     sub4: "Quem somos",
     sub5: "Contato",
     sub6: "Nosso APP",
+    sub7: "Login"
   };
 
 

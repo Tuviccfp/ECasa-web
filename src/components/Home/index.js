@@ -39,13 +39,13 @@ export default function Home() {
     return null;
   }
   return (
-    <Section style={{ height: '99.8vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
+    <Section style={{ display: 'flex', alignItems: 'start', justifyContent: 'center', gap: '10px' }}>
       <NavCategories categories={categories} key={categories} />
       <article>
         {product.searchProduct && product.searchProduct.length > 0 ? (
-          <div>
+          <div className="screen-product">
             {product.searchProduct.map((item, index) => (
-              <div key={index}>
+              <div className='model-product' key={index}>
                 <Product item={item}/>
               </div>
             ))}

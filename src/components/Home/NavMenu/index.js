@@ -32,6 +32,7 @@ export default function NavMenu({subSection, styled}) {
                 <ItemList>{subSection.sub4}</ItemList>
                 <ItemList>{subSection.sub5}</ItemList>
                 <ItemList>{subSection.sub6}</ItemList>
+                <ItemList>{subSection.sub7}</ItemList>
             </ListNav>
         </Nav>
     )

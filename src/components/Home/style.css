@@ -1,0 +1,8 @@
+.model-product {
+    width: 50%;
+}
+.screen-product {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}

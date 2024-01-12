@@ -42,6 +42,7 @@ export default function CategoriesID() {
     fetchCategoriesID();
   }, [id]);
 
+  console.log(dataID)
   //   const handleClick = () => {};
 
   const searchCategoriesID = () => {
@@ -50,7 +51,7 @@ export default function CategoriesID() {
     } else {
       return (
         <section className="nav-store">
-          <center>
+         
             <h4>{dataID.searchCategoriesID.name}</h4>
             <div className="model-new-subcategory">
               <button onClick={() => setNewSubCategory(!newSubCategory)}>
@@ -80,13 +81,19 @@ export default function CategoriesID() {
 
               <div className="model-new-product">
                 {dataID.responseProduct && dataID.responseProduct.length > 0 ? (
-                  <Product item={dataID.responseProduct[0]} />
+                  <span className="model-screen-products">
+                    {dataID.responseProduct.map((item, index) => (
+                      <div key={index}>
+                        <Product item={item}/>
+                      </div>
+                    ))}
+                    <Product item={dataID.responseProduct[0]} />
+                  </span>
                 ) : (
                   <p>Carregando dados do produto...</p>
                 )}
               </div>
             </article>
-          </center>
         </section>
       );
     }
@@ -102,11 +109,23 @@ export default function CategoriesID() {
   };
 
   return (
-    <>
-      <NavMenu subSection={subSection} />
-      <section>
+    <section>
+      {/* <NavMenu subSection={subSection} /> */}
+      <h4>{dataID.searchCategoriesID.name}</h4>
+            <div className="model-new-subcategory">
+              <button onClick={() => setNewSubCategory(!newSubCategory)}>
+                Nova Sub Categoria
+              </button>
+              {newSubCategory && <FormNewSubCategory />}
+            </div>
+
+      {/* <article>
+
+      </article> */}
+
+      <article>
         {searchCategoriesID()}
-      </section>
-    </>
+      </article>
+    </section>
   );
 }

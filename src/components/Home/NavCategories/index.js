@@ -6,12 +6,16 @@ const Nav = styled.nav`
   border-radius: 15px;
   width: 20%;
   margin-left: 10px;
-  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
 `;
 const List = styled.ol`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  & li {
+    margin-bottom: 5px;
+  }
 `;
 
 export default function NavCategories({categories}) {
