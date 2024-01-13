@@ -31,7 +31,7 @@ const LoginAdm = ({ setToken }) => {
         setModelMessage(modelMessage);
         setMessage('');
         navigate("/profile");
-      }, 5000);
+      }, 3000);
     } catch (error) {
       setModelMessage(!modelMessage);
       setMessage(

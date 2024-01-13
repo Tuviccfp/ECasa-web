@@ -30,8 +30,8 @@ const LoginEmployee = ({ setToken }) => {
       setTimeout(() => {
         setModelMessage(modelMessage);
         setMessage('');
-        navigate("/profile-employee");
-      }, 5000);
+        navigate("/profile-employees");
+      }, 3000);
     } catch (error) {
         setModelMessage(!modelMessage);
         setMessage(

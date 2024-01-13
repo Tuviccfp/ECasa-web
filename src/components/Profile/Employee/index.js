@@ -28,7 +28,7 @@ const ProfileEmployee = ({ user }) => {
         setTimeout(() => {
           setModelMessage(modelMessage);
           setMessage("");
-          navigate('/login-admin');
+          navigate('/login-employees');
         }, 5000);
       }).catch((err) => {
         setModelMessage(!modelMessage);
